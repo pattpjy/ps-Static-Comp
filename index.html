@@ -11,12 +11,22 @@
     <body>
         <nav>
             <div class="left-btn">
-                <i class="fa-solid fa-share-nodes"> SHARES</i> 
-                <i class="fa-solid fa-square-list"> PLAYLIST</i> 
-                <i class="fa-solid fa-person-simple"> PERSONAL IDEAS</i>
+                <button><i class="fa-solid fa-share-nodes"> SHARES</i></button>
+                <button><i class="fa-solid fa-square-list"> PLAYLIST</i> </button>
+                <button><i class="fa-solid fa-person-simple"> PERSONAL IDEAS</i></button>
             </div>
             <div class="right-btn">
-                <i class="fa-solid fa-user"> ADMIN</i>
+                <div class="dropdown">
+                    <button class="dropBtn">
+                        <i class="fa-solid fa-user">::ADMIN</i>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">user1</a>
+                    </div>
+                </div>
+
+
                 <i class="fa-regular fa-martini-glass-citrus fa-4x fa-beat" style="--fa-animation-duration: 3s;"></i>
             </div>
         </nav>
@@ -29,15 +39,15 @@
                         <img class="drinkPhoto" src="asset/classic-eggnog.jpeg">
                         <h3>Recipe Source</h3>
                     </div>
-                    <p class="description">short drinks description</p>
+                    <p class="description">Whiskey, cream and egg</p>
                     <div class="recipeLink">
                         <p class="linkText">http://webLink.com</p>
                         <link rel="recipeSource">
                     </div>
-                    <h5>type of drink</h5>
-                    <p class="drinkName">Name of drink</p>
+                    <h5>COCKTAIL</h5>
+                    <p class="drinkName">Classic Eggnog</p>
                     <h4>RATING</h4>
-                    <p class="rating">5</p>
+                    <p class="rating">4</p>
                 </td>
                     <td class="drinkCard">
                     <div>
@@ -49,8 +59,8 @@
                         <p class="linkText">http://webLink.com</p>
                         <link rel="recipeSource">
                     </div>
-                    <h5>type of drink</h5>
-                    <p class="drinkName">Name of drink</p>
+                    <h5>COCKTAIL</h5>
+                    <p class="drinkName">Grinch-Punch</p>
                     <h4>RATING</h4>
                     <p class="rating">5</p>
                     </td>
@@ -59,15 +69,15 @@
                             <img class="drinkPhoto" src="asset/jingle-juice.jpeg">
                             <h3>Recipe Source</h3>
                         </div>
-                        <p class="description">short drinks description</p>
+                        <p class="description">Moscato Presecco</p>
                         <div class="recipeLink">
                             <p class="linkText">http://webLink.com</p>
                             <link rel="recipeSource">
                         </div>
-                        <h5>type of drink</h5>
-                        <p class="drinkName">Name of drink</p>
+                        <h5>PUNCH</h5>
+                        <p class="drinkName">Jingle Juice</p>
                         <h4>RATING</h4>
-                        <p class="rating">5</p>
+                        <p class="rating">3</p>
                     </td>
                     <td class="drinkCard">
                         <div>
@@ -79,10 +89,10 @@
                             <p class="linkText">http://webLink.com</p>
                             <link rel="recipeSource">
                         </div>
-                        <h5>type of drink</h5>
-                        <p class="drinkName">Name of drink</p>
+                        <h5>JELLO SHOT</h5>
+                        <p class="drinkName">Mistletoe Jello Shots</p>
                         <h4>RATING</h4>
-                        <p class="rating">5</p>
+                        <p class="rating">1</p>
                     </td>
                 </tr>
                 <tr>
@@ -96,8 +106,8 @@
                             <p class="linkText">http://webLink.com</p>
                             <link rel="recipeSource">
                         </div>
-                        <h5>type of drink</h5>
-                        <p class="drinkName">Name of drink</p>
+                        <h5>COCKTAILS</h5>
+                        <p class="drinkName">Peppermintinis</p>
                         <h4>RATING</h4>
                         <p class="rating">5</p>
                     </td>
@@ -106,15 +116,15 @@
                             <img class="drinkPhoto" src="asset/sugar-cookie-martini.jpeg">
                             <h3>Recipe Source</h3>
                         </div>
-                        <p class="description">short drinks description</p>
+                        <p class="description">Baileys & Amaretto</p>
                         <div class="recipeLink">
                             <p class="linkText">http://webLink.com</p>
                             <link rel="recipeSource">
                         </div>
-                        <h5>type of drink</h5>
-                        <p class="drinkName">Name of drink</p>
+                        <h5>COCKTAIL</h5>
+                        <p class="drinkName">Sugar Cookie Martinis</p>
                         <h4>RATING</h4>
-                        <p class="rating">5</p>
+                        <p class="rating">4</p>
                     </td>
                     <td class="drinkCard">
                         <div>
@@ -126,23 +136,23 @@
                             <p class="linkText">http://webLink.com</p>
                             <link rel="recipeSource">
                         </div>
-                        <h5>type of drink</h5>
-                        <p class="drinkName">Name of drink</p>
+                        <h5>COCKTAIL</h5>
+                        <p class="drinkName">Tiramisu White Russians</p>
                         <h4>RATING</h4>
-                        <p class="rating">5</p>
+                        <p class="rating">4</p>
                     </td>
                     <td class="drinkCard">
                         <div>
                             <img class="drinkPhoto" src="asset/white-christmas-margaritas.jpeg">
                             <h3>Recipe Source</h3>
                         </div>
-                        <p class="description">short drinks description</p>
+                        <p class="description">coconut and lime</p>
                         <div class="recipeLink">
                             <p class="linkText">http://webLink.com</p>
                             <link rel="recipeSource">
                         </div>
-                        <h5>type of drink</h5>
-                        <p class="drinkName">Name of drink</p>
+                        <h5>COCKTAIL</h5>
+                        <p class="drinkName">White Christmas Margaritas</p>
                         <h4>RATING</h4>
                         <p class="rating">5</p>
                     </td>
