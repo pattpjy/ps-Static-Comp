@@ -43,8 +43,7 @@ main, .drinkCard  {
     width: 220px;
     border: solid 2px rgba(139, 139, 145);
     border-radius: 10px;
-    box-shadow: 8px 8px 1px -1px rgba(139, 139, 145, 0.2);;
-   
+    box-shadow: 8px 8px 1px -1px rgba(139, 139, 145, 0.2);
 }
 
 table {
@@ -147,4 +146,8 @@ button:hover .fa-solid {
     0% { color:aquamarine; }
     50% { color:cadetblue; }
     100% { color:rgb(29, 23, 138); }
+}
+
+.drinkCard:hover {
+    transform: rotate(4deg)
 }
