@@ -7,6 +7,7 @@ nav {
     display: flex ;
     align-items:flex-end;
     justify-content: space-between;
+    background-color: rgb(87, 144, 154);
 }
 .left-btn {
     width: 700px;
@@ -16,39 +17,41 @@ nav {
     flex-direction: column;
     align-items: center;
 }
-main {
-    background-color: lightgrey;
+main, .drinkCard  {
+    font-family: 'Varela Round', serif;
+
 }
 .fa-solid {
     padding: 20px;
 }
 .recipeLink {
-    
     align-content: center;
+    border-radius: 10px;
     margin:auto;
     width: 80%;
     height: 50px;
-    background-color: lightslategray;
+    background-color: rgba(139, 139, 145, 0.8);
 }
 .drinkCard {
     height: 300px;
     width: 220px;
-    box-shadow: 12px 12px 2px 1px rgba(139, 139, 145, 0.2);;
-    background-color: dimgray;
+    border: solid 2px rgba(139, 139, 145);
+    border-radius: 10px;
+    box-shadow: 8px 8px 1px -1px rgba(139, 139, 145, 0.2);;
+   
 }
 
 table {
-    font-family: arial, sans-serif;
-    border-spacing: 10px;
-    /* border-collapse: collapse; */
-    
-  }
+    border-spacing: 20px;
+    width: 100%;
+    margin: 0em;
+}
   
 td {
     text-align: left;
     padding: 8px;
     margin: 5px;
-  }
+}
   
 .drinkPhoto {
     width: 100%;
@@ -56,17 +59,33 @@ td {
     object-fit: cover;
     
 }
+.linkText {
+    padding: 15px;
+    font-size: smaller;
+    color: aliceblue;
+    text-align: center;
+    margin: 5px;
 
-h3, .description {
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+}
+h3, h5, .description, .drinkName, p {
+    margin-block: 5px
+}
+
+h4 {
+    margin-top:2em;
+    margin-bottom: 5px;
 }
 
 .description {
     font-size:smaller;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 .fa-beat-animation-duration {
     animation-duration: 100ms;
+}
+
+.rating {
+    font-size: xx-large;
+    color:cornflowerblue
 }
