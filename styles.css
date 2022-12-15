@@ -55,6 +55,7 @@ main {
     ;
 }
 .drinkCard {
+    marker: none;
     height: 420px;
     width: 320px;
     border: solid 3px #b4440b;
@@ -76,6 +77,9 @@ li {
     margin: 5px;
     word-wrap: break-word;
 }
+li::marker {
+    font-size: 0px;
+}
   
 .drinkPhoto {
     width: 100%;
@@ -84,6 +88,7 @@ li {
     object-fit:cover;
     object-position:top;
     border-radius: 10px;
+    filter:brightness(80%);
     background-color: gainsboro;
     
 }
@@ -146,7 +151,7 @@ button {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
     z-index: 1;
 }
   
@@ -181,7 +186,40 @@ button:hover .fa-solid {
 .headerImg {
     position: relative;
 }
+
 .fa-arrow-up-right-from-square {
     position: absolute;
-    color:#d4a368;
+    z-index: 2;
+    color:#d2cdbc;
+}
+
+.view {
+    position: absolute;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    flex-direction: column;
+    color:#362919;
+    border-radius: 10px;
+    background-color: rgba(210, 205, 188, 0.5 );
+}
+
+
+@keyframes bounce {
+    0%, 50%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ } 
+.fa-arrow-up-right-from-square:hover {
+    animation: bounce 1s ;
+} 
+@keyframes bounce2 {
+    0%,50%, 100% {transform: translateX(0);} 
+    40% {transform: translateX(-30px);} 
+    60% {transform: translateX(-15px);} 
+ } 
+.view:hover {
+    animation: bounce2 5s;
 }
