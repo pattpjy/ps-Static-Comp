@@ -37,14 +37,17 @@ main {
     color: #d2cdbc
     
 }
+
 .fa-solid .fa-caret-down{
     margin: 2px
 }
+
 .fa-caret-down,.fa-user, .fa-martini-glass-citrus{
     margin: 0em;
     padding: 5px;
     color: #d2cdbc
 }
+
 .recipeLink {
     align-content: center;
     border-radius: 10px;
@@ -54,7 +57,9 @@ main {
     background-color: rgba(180, 68, 11, .5)
     ;
 }
-.drinkCard {
+
+.drink-card {
+    marker: none;
     height: 420px;
     width: 320px;
     border: solid 3px #b4440b;
@@ -66,7 +71,7 @@ main {
 .table {
     display: flex;
     width: 100%;
-    margin: 0em;
+    margin: 1em;
     flex-wrap:wrap;
 }
   
@@ -76,14 +81,18 @@ li {
     margin: 5px;
     word-wrap: break-word;
 }
+li::marker {
+    font-size: 0px;
+}
   
-.drinkPhoto {
+.drink-photo {
     width: 100%;
     height: 150px;
     margin-top: 0;
     object-fit:cover;
     object-position:top;
     border-radius: 10px;
+    filter:brightness(80%);
     background-color: gainsboro;
     
 }
@@ -146,7 +155,7 @@ button {
     position: absolute;
     background-color: #f1f1f1;
     min-width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
     z-index: 1;
 }
   
@@ -181,7 +190,40 @@ button:hover .fa-solid {
 .headerImg {
     position: relative;
 }
+
 .fa-arrow-up-right-from-square {
     position: absolute;
-    color:#d4a368;
+    z-index: 2;
+    color:#d2cdbc;
+}
+
+.view {
+    position: absolute;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    top: 10px;
+    right: 10px;
+    flex-direction: column;
+    color:#362919;
+    border-radius: 10px;
+    background-color: rgba(210, 205, 188, 0.5 );
+}
+
+
+@keyframes bounce {
+    0%, 50%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ } 
+.fa-arrow-up-right-from-square:hover {
+    animation: bounce 1s ;
+} 
+@keyframes bounce2 {
+    0%,50%, 100% {transform: translateX(0);} 
+    40% {transform: translateX(-30px);} 
+    60% {transform: translateX(-15px);} 
+ } 
+.view:hover {
+    animation: bounce2 1s;
 }
