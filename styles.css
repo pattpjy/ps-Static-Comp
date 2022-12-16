@@ -183,7 +183,7 @@ button:hover .fa-solid {
     100% { color:#b4440b; }
 }
 
-.drinkCard:hover {
+.drink-card:hover {
     transform: rotate(4deg)
 }
 
